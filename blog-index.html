@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>SakanatCom</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Main styles -->
+	<link href="css/style.css" rel="stylesheet" />
+	<!--<link rel="stylesheet/less" href="css/style.less" />-->
+	<!-- IE styles -->
+	<link href="css/ie.css" rel="stylesheet" />
+	<!-- Font Awesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<!-- Jquery UI -->
+	<link href="css/jquery-ui.css" rel="stylesheet" />
+	<!-- OWL Carousel -->
+	<link href="css/owl.carousel.css" rel="stylesheet" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="blog">
+<!-- Overlay preloader-->
+<div class="htlfndr-loader-overlay"></div>
+
+<div class="htlfndr-wrapper">
+	<header>
+		<div class="htlfndr-top-header">
+			<div class="navbar navbar-default htlfndr-blue-hover-nav">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#htlfndr-first-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="htlfndr-logo navbar-brand" href="index.html">
+							<img src="images/logo.png" alt="Logo" />
+							<p class="htlfndr-logo-text">hotel <span>finder</span></p>
+						</a>
+					</div><!-- .navbar-header -->
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="htlfndr-first-nav">
+						<!-- List with sing up/sing in links -->
+						<ul class="nav navbar-nav htlfndr-singup-block">
+							<li id="htlfndr-singup-link">
+								<a href="#" data-toggle="modal" data-target="#htlfndr-sing-up"><span>sing up</span></a>
+							</li>
+							<li id="htlfndr-singin-link">
+								<a href="#" data-toggle="modal" data-target="#htlfndr-sing-in"><span>sing in</span></a>
+							</li>
+						</ul><!-- .htlfndr-singup-block -->
+						<!-- List with currency and language dropdowns -->
+						<ul class="nav navbar-nav htlfndr-custom-select htlfndr-currency">
+							<li>
+								<label for="htlfndr-currency" class="sr-only">Change currency</label>
+								<select name="htlfndr-currency" id="htlfndr-currency" tabindex="-1">
+									<option value="eur">eur</option>
+									<option value="gbp">gbp</option>
+									<option value="jpy">jpy</option>
+									<option value="usd" selected="selected">usd</option>
+								</select>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav htlfndr-custom-select htlfndr-language">
+							<li id="htlfndr-dropdown-language">
+								<label for="htlfndr-language" class="sr-only">Change language</label>
+								<select name="htlfndr-language" id="htlfndr-language" tabindex="-1">
+									<option value="eng" selected="selected">eng</option>
+									<option value="ger">ger</option>
+									<option value="jap">jap</option>
+									<option value="ita">ita</option>
+									<option value="fre">fre</option>
+									<option value="rus" >rus</option>
+								</select>
+							</li>
+						</ul><!-- .htlfndr-top-menu-dropdowns -->
+					</div><!-- .collapse.navbar-collapse -->
+				</div><!-- .container -->
+			</div><!-- .navbar.navbar-default.htlfndr-blue-hover-nav-->
+		</div><!-- .htlfndr-top-header -->
+		<!-- Start of main navigation -->
+		<div class="htlfndr-under-header">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#htlfndr-main-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div><!-- .navbar-header -->
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="htlfndr-main-nav">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">home</a>
+							</li>
+							<li><a href="elements.html">elements</a></li>
+							<li class="active">
+								<a href="blog-index.html">blog</a>
+							</li>
+							<li>
+								<a href="about-us.html">about</a>
+							</li>
+							<li>
+								<a href="user-page.html">user profile</a>
+							</li>
+							<li  class="dropdown">
+								<a href="#" onclick="return false;">Pages</a>
+								<ul class="dropdown-menu">
+									<li  class="dropdown-submenu"><a href="search-result.html">Search result</a>
+										<ul class="dropdown-menu">
+											<li><a href="search-result.html">Search result 1</a>
+											<li><a href="search-result-v-2.html">Search result 2</a></li>
+											<li><a href="search-result-v-3.html">Search result 3</a></li>
+										</ul>
+									</li>
+									<li  class="dropdown-submenu"><a href="hotel-page-v1.html">Hotel page</a>
+										<ul class="dropdown-menu">
+											<li><a href="hotel-page-v1.html">Hotel page 1</a>
+											<li><a href="hotel-page-v2.html">Hotel page 1 Special offer</a></li>
+											<li><a href="hotel-page-v3.html">Hotel page 2</a></li>
+											<li><a href="hotel-page-v4.html">Hotel page 2 Special offer</a></li>
+										</ul>
+									</li>	
+									<li class="dropdown-submenu"><a href="hotel-room-page.html">Hotel Room Page</a>
+										<ul class="dropdown-menu">
+											<li><a href="hotel-room-page.html">Hotel Room Page</a>
+											<li><a href="hotel-room-page-special-offer.html">Hotel Room Page Special offer</a></li>
+										</ul>
+									</li>
+									<li><a href="payment.html">Payment</a></li>
+									<li><a href="search-rooms.html">Search Rooms</a></li>
+									<li><a href="contact-us.html">Contact Us</a></li>
+									<li><a href="thanks-page.html">Thanks Page</a></li>											
+									<li><a href="404-page.html">404 Page</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- .collapse.navbar-collapse -->
+				</div><!-- .container -->
+			</nav><!-- .navbar.navbar-default.htlfndr-blue-hover-nav -->
+		</div><!-- .htlfndr-under-header -->
+		<!-- End of main navigation -->
+		<noscript><h2>You have JavaScript disabled!</h2></noscript>
+	</header>
+
+	<!-- Start of main content -->
+
+	<div class="container">
+		<div class="row htlfndr-page-content">
+			<main id="htlfndr-main-content" class="col-sm-12 col-md-8 col-lg-9" role="main">
+				<article class="post htlfndr-post">
+					<header class="htlfndr-entry-header">
+						<a href="blog-single.html"><h2 class="htlfndr-entry-title">Amazing Standard Blog Post</h2></a>
+						<div class="htlfndr-entry-meta">
+							<span class="htlfndr-posted-by">Posted by <a href="#">Frank Mills</a></span>
+							<span class="htlfndr-post-date"><a href="#"><time datetime="2015-08-25">23 July 2015</time></a></span>
+							<span class="htlfndr-post-time"><a href="#"><time datetime="18:00">at 06 : 00 PM</time></a></span>
+							<span class="htlfndr-category-link"><a href="#">travel stories</a></span>
+							<span class="htlfndr-post-comments"><a href="#">24</a> Comments</span>
+						</div><!-- .htlfndr-entry-meta -->
+					</header>
+					<a href="#" class="htlfndr-post-thumbnail">
+						<img src="http://placehold.it/850x375" alt="post image" />
+					</a>
+					<div class="htlfndr-entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolorum ducimus modi neque quibusdam rerum similique velit? Aspernatur culpa delectus dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente. dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente.</p>
+						<a href="blog-single.html" class="htlfndr-more-link">read more</a>
+					</div><!-- .htlfndr-entry-content -->
+				</article><!-- .post .htlfndr-post -->
+
+				<article class="post htlfndr-post htlfndr-slider-post">
+					<header class="htlfndr-entry-header">
+						<a href="blog-single.html"><h2 class="htlfndr-entry-title">Slider Blog Post</h2></a>
+						<div class="htlfndr-entry-meta">
+							<span class="htlfndr-posted-by">Posted by <a href="#">Sara Mills</a></span>
+							<span class="htlfndr-post-date"><a href="#"><time datetime="2015-08-25">23 July 2015</time></a></span>
+							<span class="htlfndr-post-time"><a href="#"><time datetime="18:00">at 02 : 00 PM</time></a></span>
+							<span class="htlfndr-category-link"><a href="#">travel stories</a></span>
+							<span class="htlfndr-post-comments"><a href="#">18</a> comments</span>
+						</div><!-- .htlfndr-entry-meta -->
+					</header>
+					<div class="owl-carousel htlfndr-post-thumbnail">
+						<div class="htlfndr-post-slide-wrapper">
+							<img src="http://placehold.it/850x375" alt="room picture" />
+						</div><!-- .htlfndr-post-slide-wrapper -->
+						<div class="htlfndr-post-slide-wrapper">
+							<img src="http://placehold.it/850x375" alt="room picture" />
+						</div><!-- .htlfndr-post-slide-wrapper -->
+						<div class="htlfndr-post-slide-wrapper">
+							<img src="http://placehold.it/850x375" alt="room picture" />
+						</div><!-- .htlfndr-post-slide-wrapper -->
+						<div class="htlfndr-post-slide-wrapper">
+							<img src="http://placehold.it/850x375" alt="room picture" />
+						</div><!-- .htlfndr-post-slide-wrapper -->
+						<div class="htlfndr-post-slide-wrapper">
+							<img src="http://placehold.it/850x375" alt="room picture" />
+						</div><!-- .htlfndr-slide-wrapper -->
+					</div><!-- .htlfndr-slider-post-slider -->
+					<div class="htlfndr-entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolorum ducimus modi neque quibusdam rerum similique velit? Aspernatur culpa delectus dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente. dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente.</p>
+						<a href="blog-single.html" class="htlfndr-more-link">read more</a>
+					</div><!-- .htlfndr-entry-content -->
+				</article><!-- .post .htlfndr-post .htlfndr-slider-post -->
+
+				<article class="post htlfndr-post htlfndr-post-format-quote">
+					<header class="htlfndr-entry-header">
+						<a href="blog-single.html"><h2 class="htlfndr-entry-title">Quote Post Type</h2></a>
+						<div class="htlfndr-entry-meta">
+							<span class="htlfndr-posted-by">Posted by <a href="#">Admin</a></span>
+							<span class="htlfndr-post-date"><a href="#"><time datetime="2015-08-25">23 July 2015</time></a></span>
+							<span class="htlfndr-post-time"><a href="#"><time datetime="18:00">at 07 : 00 PM</time></a></span>
+							<span class="htlfndr-category-link"><a href="#">services</a></span>
+							<span class="htlfndr-post-comments"><a href="#">24</a> comments</span>
+						</div><!-- .htlfndr-entry-meta -->
+					</header>
+					<div class="htlfndr-entry-content">
+						<blockquote>
+							<p>Quam habitasse odio habitasse ultrices dis varius ultrices imperdiet aliquam aliquam etiam</p>
+						</blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolorum ducimus modi neque quibusdam rerum similique velit? Aspernatur culpa delectus dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente. dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente.</p>
+						<a href="#" class="htlfndr-more-link">read more</a>
+					</div><!-- .htlfndr-entry-content -->
+				</article><!-- .post .htlfndr-post .htlfndr-post-format-quote -->
+
+				<article class="post htlfndr-post htlfndr-post-format-video">
+					<header class="htlfndr-entry-header">
+						<a href="blog-single.html"><h2 class="htlfndr-entry-title">Vimeo Video Blog Post</h2></a>
+						<div class="htlfndr-entry-meta">
+							<span class="htlfndr-posted-by">Posted by <a href="#">Frank Mills</a></span>
+							<span class="htlfndr-post-date"><a href="#"><time datetime="2015-08-25">23 July 2015</time></a></span>
+							<span class="htlfndr-post-time"><a href="#"><time datetime="18:00">at 06 : 00 PM</time></a></span>
+							<span class="htlfndr-category-link"><a href="#">trending now</a></span>
+							<span class="htlfndr-post-comments"><a href="#">24</a> Comments</span>
+						</div><!-- .htlfndr-entry-meta -->
+					</header>
+					<div class="htlfndr-iframe-wrapper htlfndr-post-thumbnail">
+						<iframe src="http://placehold.it/825x465" frameborder="0"
+										webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p><a href="#">The Hotel</a> from <a
+							href="#">HOMEMBALA</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+					</div><!-- .htlfndr-iframe-wrapper -->
+					<div class="htlfndr-entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolorum ducimus modi neque quibusdam rerum similique velit? Aspernatur culpa delectus dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente. dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente.</p>
+						<a href="blog-single.html" class="htlfndr-more-link">read more</a>
+					</div><!-- .htlfndr-entry-content -->
+				</article><!-- .post .htlfndr-post .htlfndr-post-format-video-->
+
+				<article class="post htlfndr-post htlfndr-post-format-video">
+					<header class="htlfndr-entry-header">
+						<a href="blog-single.html"><h2 class="htlfndr-entry-title">YouTube Blog Post</h2></a>
+						<div class="htlfndr-entry-meta">
+							<span class="htlfndr-posted-by">Posted by <a href="#">Frank Mills</a></span>
+							<span class="htlfndr-post-date"><a href="#"><time datetime="2015-08-25">23 July 2015</time></a></span>
+							<span class="htlfndr-post-time"><a href="#"><time datetime="18:00">at 06 : 00 PM</time></a></span>
+							<span class="htlfndr-category-link"><a href="#">trending now</a></span>
+							<span class="htlfndr-post-comments"><a href="#">24</a> Comments</span>
+						</div><!-- .htlfndr-entry-meta -->
+					</header>
+					<div class="htlfndr-iframe-wrapper htlfndr-post-thumbnail">
+						<iframe src="http://placehold.it/820x465" frameborder="0" allowfullscreen></iframe>
+					</div><!-- .htlfndr-iframe-wrapper -->
+					<div class="htlfndr-entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolorum ducimus modi neque quibusdam rerum similique velit? Aspernatur culpa delectus dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente. dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente.</p>
+						<a href="#" class="htlfndr-more-link">read more</a>
+					</div><!-- .htlfndr-entry-content -->
+				</article><!-- .post .htlfndr-post .htlfndr-post-format-video-->
+
+				<article class="post htlfndr-post">
+					<header class="htlfndr-entry-header">
+						<h2 class="htlfndr-entry-title">Simple Blog Post</h2>
+						<div class="htlfndr-entry-meta">
+							<span class="htlfndr-posted-by">Posted by <a href="#">Frank Mills</a></span>
+							<span class="htlfndr-post-date"><a href="#"><time datetime="2015-08-25">23 July 2015</time></a></span>
+							<span class="htlfndr-post-time"><a href="#"><time datetime="18:00">at 06 : 00 PM</time></a></span>
+							<span class="htlfndr-category-link"><a href="#">trending now</a></span>
+							<span class="htlfndr-post-comments"><a href="#">18</a> comments</span>
+						</div><!-- .htlfndr-entry-meta -->
+					</header>
+					<div class="htlfndr-entry-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolorum ducimus modi neque quibusdam rerum similique velit? Aspernatur culpa delectus dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente. dicta hic itaque laboriosam laudantium libero, perferendis quod sapiente.</p>
+						<a href="blog-single.html" class="htlfndr-more-link">read more</a>
+					</div><!-- .htlfndr-entry-content -->
+				</article><!-- .post .htlfndr-post -->
+
+				<!-- Pagination -->
+				<nav class="htlfndr-pagination">
+					<ul class="pagination">
+						<li class="htlfndr-left">
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true" class="fa fa-angle-left"></span>
+							</a>
+						</li>
+						<li class="current"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li class="htlfndr-right">
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true" class="fa fa-angle-right"></span>
+							</a>
+						</li>
+					</ul>
+				</nav><!-- .htlfndr-pagination -->
+			</main><!-- #htlfndr-main-content -->
+
+			<aside id="htlfndr-right-sidebar" class="col-sm-12 col-md-4 col-lg-3 htlfndr-sidebar htlfndr-sidebar-in-right" role="complementary">
+				<div class="widget">
+					<form action="#" class="htlfndr-blog-search-form" method="get" role="search">
+						<label for="htlfndr-blog-search-field" class="sr-only">Search for:</label>
+						<input type="search" title="Search for:" name="s" value="" placeholder="Search" id="htlfndr-blog-search-field" class="htlfndr-blog-search-field">
+						<input type="submit" value="search" class="htlfndr-blog-search-submit">
+					</form>
+				</div><!-- .widget -->
+
+				<div class="widget htlfndr-near-properties">
+					<div class="htlfndr-widget-main-content">
+						<h3 class="widget-title">properties	near</h3>
+						<div class="htlfdr-hotel-post">
+							<div class="htlfndr-post-inner htlfndr-table-view">
+								<div class="htlfndr-hotel-thumbnail">
+									<a href="hotel-page-v1.html">
+										<img src="http://placehold.it/100x75" alt="hotel pic"/>
+									</a>
+								</div>
+								<!-- .htlfndr-hotel-thumbnail -->
+								<div class="htlfndr-hotel-info">
+									<a href="hotel-page-v1.html"><h6>Ruzzini Palace Hotel</h6></a>
+									<div class="htlfndr-rating-stars">
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+									</div><!-- .htlfndr-rating-stars -->
+									<p class="htlfndr-hotel-price"><span>per night</span> <span class="htlfndr-cost-normal">$150</span>
+									</p>
+								</div><!-- .htlfndr-hotel-info -->
+							</div><!-- .htlfndr-post-inner -->
+						</div><!-- .htlfdr-hotel-post -->
+
+						<div class="htlfdr-hotel-post">
+							<div class="htlfndr-post-inner htlfndr-table-view">
+								<div class="htlfndr-hotel-thumbnail">
+									<a href="hotel-page-v3.html">
+										<img src="http://placehold.it/100x75" alt="hotel pic"/>
+									</a>
+								</div><!-- .htlfndr-hotel-thumbnail -->
+								<div class="htlfndr-hotel-info">
+									<a href="hotel-page-v3.html"><h6>Foscari Palace</h6></a>
+									<div class="htlfndr-rating-stars">
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</div><!-- .htlfndr-rating-stars -->
+									<p class="htlfndr-hotel-price"><span>per night</span> <span class="htlfndr-cost-normal">$200</span>
+									</p>
+								</div><!-- .htlfndr-hotel-info -->
+							</div><!--.htlfndr-post-inner-->
+						</div><!-- .htlfdr-hotel-post -->
+
+						<div class="htlfdr-hotel-post">
+							<div class="htlfndr-post-inner htlfndr-table-view">
+								<div class="htlfndr-hotel-thumbnail">
+									<a href="hotel-page-v1.html">
+										<img src="http://placehold.it/100x75" alt="hotel pic"/>
+									</a>
+								</div><!-- .htlfndr-hotel-thumbnail -->
+								<div class="htlfndr-hotel-info">
+									<a href="hotel-page-v1.html"><h6>Carnival Hotel</h6></a>
+									<div class="htlfndr-rating-stars">
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star"></i>
+									</div><!-- .htlfndr-rating-stars -->
+									<p class="htlfndr-hotel-price"><span>per night</span> <span class="htlfndr-cost-normal">$400</span>
+									</p>
+								</div><!-- .htlfndr-hotel-info -->
+							</div><!-- .htlfndr-post-inner -->
+						</div><!-- .htlfdr-hotel-post -->
+
+						<div class="htlfdr-hotel-post">
+							<div class="htlfndr-post-inner htlfndr-table-view">
+								<div class="htlfndr-hotel-thumbnail">
+									<a href="hotel-page-v3.html">
+										<img src="http://placehold.it/100x75" alt="hotel pic"/>
+									</a>
+								</div><!-- .htlfndr-hotel-thumbnail -->
+								<div class="htlfndr-hotel-info">
+									<a href="hotel-page-v3.html"><h6>Hilton Molino</h6></a>
+									<div class="htlfndr-rating-stars">
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star htlfndr-star-color"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</div><!-- .htlfndr-rating-stars -->
+									<p class="htlfndr-hotel-price"><span>per night</span> <span class="htlfndr-cost-normal">$350</span>
+									</p>
+								</div><!-- .htlfndr-hotel-info -->
+							</div><!-- .htlfndr-post-inner -->
+						</div><!-- .htlfdr-hotel-post -->
+					</div><!-- .htlfndr-widget-main-content .htlfndr-widget-padding -->
+				</div><!-- .widget .htlfndr-near-properties -->
+
+				<div class="widget htlfndr-widget-archive">
+					<div class="htlfndr-widget-main-content htlfndr-widget-padding">
+						<h3 class="widget-title">archives</h3>
+						<ul>
+							<li><a href="#">august 2015</a></li>
+							<li><a href="#">july 2015</a></li>
+							<li><a href="#">june 2015</a></li>
+							<li><a href="#">may 2015</a></li>
+							<li><a href="#">april 2015</a></li>
+							<li><a href="#">march 2015</a></li>
+							<li><a href="#">february 2015</a></li>
+							<li><a href="#">january 2015</a></li>
+							<li><a href="#">december 2014</a></li>
+						</ul>
+					</div><!-- .htlfndr-widget-main-content .htlfndr-widget-padding -->
+				</div><!-- .widget .htlfndr-widget-archive -->
+
+				<div class="widget htlfndr-widget-category">
+					<div class="htlfndr-widget-main-content htlfndr-widget-padding">
+						<h3 class="widget-title">categories</h3>
+						<ul>
+							<li><a href="#">photos</a></li>
+							<li><a href="#">travel stories</a></li>
+							<li><a href="#">trending now</a></li>
+							<li><a href="#">places to go</a></li>
+							<li><a href="#">services</a></li>
+						</ul>
+					</div><!-- .htlfndr-widget-main-content .htlfndr-widget-padding -->
+				</div><!-- .widget .htlfndr-widget-category -->
+
+				<div class="widget htlfndr-widget-twitter">
+					<div class="htlfndr-widget-main-content htlfndr-widget-padding">
+						<h3 class="widget-title">twitter feed</h3>
+						<!--<ul class="htlfndr-recent-tweets">-->
+							<!--<li>-->
+								<!--Very comfortable and beautiful theme <a href="#" class="hashtag">#HotelFinder</a> <a href="#" class="hashtag">#themeforest</a> by <a-->
+								<!--href="#">@bestwebsoft</a>-->
+								<!--<p class="htlfndr-twitter-time"><a href="#">3 days ago</a></p>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--Connecting <a href="#">buff.ly/1oSET13</a> great <a href="#" class="hashtag">#documentary</a> on <a-->
+								<!--href="#" class="hashtag">#interaction</a> <a href="#" class="hashtag">#design</a> by <a href="#">@Microsoft</a>-->
+								<!--<p class="htlfndr-twitter-time"><a href="#">5 days ago</a></p>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">@hotelfinder</a> Wordpress Booking Theme is launched! <a href="#" class="hashtag">#wordPress</a>-->
+								<!--<a href="#" class="hashtag">#bestwebsoft</a> <a href="#" class="hashtag">#new</a>-->
+								<!--<p class="htlfndr-twitter-time"><a href="#">12 days ago</a></p>-->
+							<!--</li>-->
+						<!--</ul>-->
+						<a class="twitter-timeline"  href="https://twitter.com/Wishmaker88" data-widget-id="636886660064649216"
+							 data-chrome="noheader noborders noscrollbar nofooter" data-tweet-limit="3" data-screen-name="bestwebsoft"
+							 data-show-replies="false">Tweets from @bestwebsoft</a>
+
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+					</div><!-- .htlfndr-widget-main-content .htlfndr-widget-padding -->
+				</div><!-- .widget .htlfndr-widget-twitter -->
+
+				<div class="widget htlfndr-widget-help">
+					<div class="htlfndr-widget-main-content htlfndr-widget-padding">
+						<h3 class="widget-title">need our help</h3>
+						<span>24/7 dedicated customer support</span>
+						<p class="htlfndr-phone">+(000) 000-000-000</p>
+						<p class="htlfndr-mail">support@bestwebsoft.zendesk.com</p>
+					</div><!-- .htlfndr-widget-main-content .htlfndr-widget-padding -->
+				</div><!-- .widget .htlfndr-widget-help -->
+			</aside><!-- .htlfndr-sidebar-in-right -->
+		</div><!-- .row .htlfndr-page-content -->
+	</div><!-- .container -->
+	<!-- End of main content -->
+
+	<!-- Start of the Footer -->
+	<footer class="htlfndr-footer">
+		<button class="htlfndr-button-to-top" role="button"><span>Back to top</span></button><!-- Button "To top" -->
+
+		<div class="widget-wrapper">
+			<div class="container">
+				<div class="row">
+					<aside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+						<div class="widget">
+							<a class="htlfndr-logo navbar-brand" href="#">
+								<img src="images/logo.png" height="20" width="30" alt="Logo" />
+								<p class="htlfndr-logo-text">hotel <span>finder</span></p>
+							</a>
+							<hr />
+							<p>Suspendisse sed sollicitudin nisl, at dignissim libero. Sed porta tincidunt ipsum, vel volutpat.</p>
+							<br />
+							<p>Nunc ut fringilla urna. Cras vel adipiscing ipsum. Integer dignissim nisl eu lacus interdum facilisis. Aliquam erat volutpat. Nulla</p>
+						</div><!-- .widget -->
+					</aside><!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+					<aside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+						<div class="widget">
+							<h3 class="widget-title">contact info</h3>
+							<h5>address</h5>
+							<p>Hotel Finder	<br />120 CA 15th Avenue-Suite 214, USA</p>
+							<hr />
+							<h5>phone number</h5>
+							<p>1-555-5555-5555</p>
+							<hr />
+							<h5>email address</h5>
+							<p>support@bestwebsoft.zendesk.com.com</p>
+						</div><!-- .widget -->
+					</aside><!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+					<aside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+						<div class="widget">
+							<h3 class="widget-title">pages</h3>
+							<ul class="menu">
+								<li class="menu-item"><a href="index.html">home</a></li>
+								<li class="menu-item"><a href="elements.html">elements</a></li>
+								<li class="menu-item active"><a href="blog-index.html">blog</a></li>
+								<li class="menu-item"><a href="about-us.html">about</a></li>
+								<li class="menu-item"><a href="user-page.html">user profile</a></li>
+							</ul>
+						</div><!-- .widget -->
+					</aside><!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+					<aside class="col-xs-12 col-sm-6 col-md-3 htlfndr-widget-column">
+						<div class="widget">
+							<h3 class="widget-title">follow us</h3>
+							<!-- Start of Follow Us buttons -->
+							<div class="htlfndr-follow-plugin">
+								<a href="https://www.facebook.com/bestwebsoft/" target="_blank" class="htlfndr-follow-button button-facebook"></a>
+								<a href="https://twitter.com/bestwebsoft" target="_blank" class="htlfndr-follow-button button-twitter"></a>
+								<a href="https://plus.google.com/+Bestwebsoft" target="_blank" class="htlfndr-follow-button button-google-plus"></a>
+								<a href="https://www.linkedin.com/company/bestwebsoft/" target="_blank" class="htlfndr-follow-button button-linkedin"></a>
+								<a href="#" class="htlfndr-follow-button button-pinterest"></a>
+								<a href="https://www.youtube.com/bestwebsoft" target="_blank" class="htlfndr-follow-button button-youtube"></a>
+							</div><!-- .htlfndr-follow-plugin -->
+							<!-- End of Follow Us buttons -->
+							<hr />
+							<h3 class="widget-title">mailing list</h3>
+							<p>Sign up for our mailing list to get latest updates and offers</p>
+							<form action="/">
+								<input type="email" placeholder="Your E-mail" />
+								<input type="submit" />
+							</form>
+						</div><!-- .widget -->
+					</aside><!-- .col-xs-12.col-sm-6.col-md-3.htlfndr-widget-column -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</div><!-- .widget-wrapper -->
+
+		<div class="htlfndr-copyright">
+			<div class="container" role="contentinfo">
+				<p>Copyright 2017 | BESTWEBSOFT | All Rights Reserved | Designed by BestWebSoft</p>
+			</div><!-- .container -->
+		</div><!-- .htlfndr-copyright -->
+	</footer>
+</div><!-- .htlfndr-wrapper -->
+<div id="htlfndr-sing-up">
+	<div class="htlfndr-content-card">
+		<div class="htlfndr-card-title clearfix">
+			<h2 class="pull-left">Sing up</h2> 
+		</div>
+		<form id="htlfndr-sing-up-form" method="post">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>first name</h4>
+					<input id="htlfndr-sing-up-name" class="htlfndr-input " type="text" name="htlfndr-sing-up-name">
+				</div>
+				<div class="col-md-6">
+					<h4>last name</h4>
+					<input id="htlfndr-sing-up-last-name" class="htlfndr-input " type="text" name="htlfndr-sing-up-last-name">
+				</div>
+			</div>
+			<h4>E-mail adress</h4>
+			<input id="htlfndr-sing-up-email" class="htlfndr-input " type="text" name="htlfndr-sing-up-email">
+			<h4>Password</h4>
+			<input id="htlfndr-sing-up-pass" class="htlfndr-input " type="text" name="htlfndr-sing-up-pass">
+			<h4>Confirm Password</h4>
+			<input id="htlfndr-sing-up-pass-conf" class="htlfndr-input " type="text" name="htlfndr-sing-up-pass-conf">
+			<div class="clearfix">
+			<span>Have an Account? 
+				<a data-target="#htlfndr-sing-in" data-toggle="modal" href="#">
+					<span>Sing in</span>
+				</a>
+			</span>
+			<input type="submit" value="Sing up" class="pull-right">
+			</div>
+		</form>
+	</div>
+</div>	
+<div id="htlfndr-sing-in">
+	<div class="htlfndr-content-card">
+		<div class="htlfndr-card-title clearfix">
+			<h2 class="pull-left">Sing in</h2> 
+		</div>
+		<form id="htlfndr-sing-in-form" method="post">
+			<h4>E-mail adress</h4>
+			<input id="htlfndr-sing-in-email" class="htlfndr-input " type="text" name="htlfndr-sing-in-emal">
+			<h4>Password</h4>
+			<input id="htlfndr-sing-in-pass" class="htlfndr-input " type="text" name="htlfndr-sing-in-pass">
+			<div class="clearfix">
+			<span>Don't Have an Account? 
+				<a data-target="#htlfndr-sing-up" data-toggle="modal" href="#">
+					<span>Sing up</span>
+				</a>
+			</span>
+			<input type="submit" value="Sing in" class="pull-right">
+			</div>
+		</form>
+	</div>
+</div>	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- Include Jquery UI script file -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Include Jquery UI responsive tabs script file -->
+<script src="js/jquery.responsiveTabs.min.js"></script>
+<!-- Include Query UI Touch Punch is a small hack that enables the use
+		 of touch events on sites using the jQuery UI user interface library. -->
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Include Owl Carousel script file -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Include main script file -->
+<script src="js/script.js"></script>
+
+<!--<script src="js/less.min.js" ></script> -->
+</body>
+</html>
